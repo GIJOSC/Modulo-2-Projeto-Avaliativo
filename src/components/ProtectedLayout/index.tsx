@@ -1,6 +1,6 @@
 import useAuth from "../../context/AuthProvider/useAuth";
 
-const ProtectedLayout = ({ children }: { children: JSX.Element }) => {
+export const ProtectedLayout = ({ children }: { children: JSX.Element }) => {
   const auth = useAuth();
 
   if (!auth.email) {
@@ -9,5 +9,3 @@ const ProtectedLayout = ({ children }: { children: JSX.Element }) => {
 
   return children;
 };
-
-export default ProtectedLayout;
