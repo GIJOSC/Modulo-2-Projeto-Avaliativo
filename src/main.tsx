@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import "./index.css";
 import { ConfigProvider } from "antd";
 import ptBR from "antd/lib/locale/pt_BR";
-import "antd/dist/antd.css";
+import "antd/dist/antd.js";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

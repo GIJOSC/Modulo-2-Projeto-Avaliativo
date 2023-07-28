@@ -1,3 +1,4 @@
+import Login from "./components/Login";
 import { ProtectedLayout } from "./components/ProtectedLayout";
 import { AuthProvider } from "./context/AuthProvider";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -15,7 +16,7 @@ function App() {
             }
             path="/profile"
           />
-          <Route path="/login" />
+          <Route element={<Login />} path="/login" />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
